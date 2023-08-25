@@ -22,11 +22,10 @@ const Button: FC<ButtonProps> = ({ text, onClick, className }) => {
       onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`border-2 rounded-2xl ${className ?? ''} ${
-        isHovered
+      className={`border-2 lg:rounded-2xl rounded-md ${className ?? ''} ${isHovered
           ? 'bg-tvsm-white text-tvsm-orange border-tvsm-orange'
           : 'bg-tvsm-orange text-tvsm-white border-tvsm-white'
-      }`}
+        }`}
     >
       {text}
     </button>

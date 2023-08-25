@@ -7,7 +7,7 @@ import discordIcon from '../../assets/icons/discord.svg'
 
 const Header: FC = () => {
   return (
-    <div className="h-60 text-center">
+    <div className="md:h-60 h-40 text-center">
       <div className="flex justify-end items-center p-6 gap-6">
         <img src={instagramIcon} alt="instagram" className="w-6 h-6" />
         <img src={twitterIcon} alt="twitter" className="w-6 h-6" />
@@ -15,7 +15,7 @@ const Header: FC = () => {
         <img src={tiktokIcon} alt="tiktok" className="w-6 h-6" />
         <img src={discordIcon} alt="discord" className="w-6 h-6" />
       </div>
-      <h1 className="font-ldr-kaet text-6xl">CHOOSE YOUR SIDE!</h1>
+      <h1 className="font-ldr-kaet md:text-6xl text-3xl">CHOOSE YOUR SIDE!</h1>
     </div>
   )
 }

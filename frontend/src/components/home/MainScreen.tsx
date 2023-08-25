@@ -21,20 +21,19 @@ const MainScreen: FC = () => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`bg-no-repeat bg-cover bg-center w-full h-screen relative ${
-        isHovered ? 'bg-main-screen-variant' : 'bg-main-screen-default'
-      }`}
+      className={`bg-no-repeat bg-cover bg-center w-full h-screen relative ${isHovered ? 'bg-main-screen-variant' : 'bg-main-screen-default'
+        }`}
     >
-      <div className="flex justify-end items-center p-10 gap-10">
-        <img src={instagramIcon} alt="instagram" className="w-10 h-10" />
-        <img src={twitterIcon} alt="twitter" className="w-10 h-10" />
-        <img src={facebookIcon} alt="facebook" className="w-10 h-10" />
-        <img src={tiktokIcon} alt="tiktok" className="w-10 h-10" />
-        <img src={discordIcon} alt="discord" className="w-10 h-10" />
+      <div className="flex justify-end items-center p-10 sm:gap-10 gap-5">
+        <img src={instagramIcon} alt="instagram" className="sm:w-10 w-6 sm:h-10 h-6" />
+        <img src={twitterIcon} alt="twitter" className="sm:w-10 w-6 sm:h-10 h-6" />
+        <img src={facebookIcon} alt="facebook" className="sm:w-10 w-6 sm:h-10 h-6" />
+        <img src={tiktokIcon} alt="tiktok" className="sm:w-10 w-6 sm:h-10 h-6" />
+        <img src={discordIcon} alt="discord" className="sm:w-10 w-6 sm:h-10 h-6" />
       </div>
       <Button
         text="SHOP NOW"
-        className="w-96 h-28 text-3xl py-5 px-10 absolute bottom-5 left-1/2 transform -translate-x-1/2"
+        className="sm:w-96 w-max sm:h-28 h-fit sm:text-3xl text-xl py-5 px-10 absolute bottom-5 left-1/2 transform -translate-x-1/2"
       />
     </div>
   )
